@@ -11,15 +11,14 @@ cat <<EOF >/fei.json
         {
             "listen": "0.0.0.0",
             "port": 8080,
-            "protocol": "vmess",
+            "protocol": "Shadowsocks",
             "settings": {
                 "clients": [
                     {
-                        "id": "d8b6af50-11dd-46ae-b598-6701778ce6b3",
-                        "alterId": 0
+                    "password": "goorm",
+                    "method": "aes-128-gcm"
                     }
                 ],
-                "disableInsecureEncryption": false
             },
             "streamSettings": {
                 "network": "ws"
