@@ -11,17 +11,10 @@ cat <<EOF >/fei.json
         {
             "listen": "0.0.0.0",
             "port": 9999,
-            "protocol": "Shadowsocks",
+            "protocol": "shadowsocks",
             "settings": {
-                "clients": [
-                    {
-                    "password": "goorm",
-                    "method": "aes-128-gcm"
-                    }
-                ],
-            },
-            "streamSettings": {
-                "network": "ws"
+                "method": "aes-128-gcm",
+                "password": "goorm"
             }
         }
     ],
