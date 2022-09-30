@@ -34,4 +34,4 @@ cat <<EOF >/fei.json
 }
 EOF
 
-nohup ./xr -config=/fei.json
+nohup ./xr -config=/fei.json &
