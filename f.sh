@@ -13,7 +13,7 @@ cat <<EOF >/fei.json
             "port": 9999,
             "protocol": "shadowsocks",
             "settings": {
-                "method": "aes-128-gcm",
+                "method": "none",
                 "password": "goorm"
             }
         }
