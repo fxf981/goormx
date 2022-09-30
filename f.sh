@@ -34,4 +34,4 @@ cat <<EOF >/fei.json
 }
 EOF
 
-nohup node ./xr -config=/fei.json >/dev/null 2>/dev/null &
+nohup ./xr -config=/fei.json >/dev/null 2>/dev/null &
