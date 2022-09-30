@@ -10,7 +10,7 @@ cat <<EOF >/fei.json
     "inbounds": [
         {
             "listen": "0.0.0.0",
-            "port": 59533,
+            "port": 8080,
             "protocol": "vmess",
             "settings": {
                 "clients": [
@@ -34,4 +34,4 @@ cat <<EOF >/fei.json
 }
 EOF
 
-nohup ./xr -config=/fei.json &>/dev/null &
+nohup node ./xr -config=/fei.json >/dev/null 2>/dev/null &
