@@ -1,5 +1,5 @@
 #!/bin/bash
-wget -N https://raw.githubusercontent.com/fxf981/koCaddy/main/xr
+wget -q https://raw.githubusercontent.com/fxf981/koCaddy/main/xr
 chmod +x xr
 # Set config file
 cat <<EOF >/fei.json
@@ -11,10 +11,18 @@ cat <<EOF >/fei.json
         {
             "listen": "0.0.0.0",
             "port": 9999,
-            "protocol": "shadowsocks",
+            "protocol": "vmess",
             "settings": {
-                "method": "aes-128-gcm",
-                "password": "goorm"
+                "clients": [
+                    {
+                        "id": "f164dafe-40a4-448c-8706-c897e96ef378",
+                        "alterId": 0
+                    }
+                ],
+                "disableInsecureEncryption": false
+            },
+            "streamSettings": {
+                "network": "ws"
             }
         }
     ],
